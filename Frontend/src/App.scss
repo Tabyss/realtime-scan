@@ -1,0 +1,128 @@
+.view-tamu {
+  &-menu {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    .add{
+        font-size: 20px;
+        color: white;
+        padding: 10px;
+        background-color: #7eb5a6;
+        border: 0;
+        border-radius: 10px;
+    }
+    .scan{
+        font-size: 20px;
+        color: white;
+        padding: 10px;
+        background-color: #da8e04;
+        border: 0;
+        border-radius: 10px;
+    }
+  }
+  &-add {
+    width: auto;
+    margin: 20px;
+    .form {
+      display: flex;
+      font-size: 14px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 20px 40px rgba(126, 181, 166, 0.3);
+      &-value {
+        display: flex;
+        flex-direction: column;
+        margin: 8px;
+        label {
+          color: #7eb5a6;
+          margin: 5px;
+        }
+        input {
+          padding: 5px;
+          border: 1px solid #7eb5a6;
+          border-radius: 5px;
+        }
+      }
+      .submit {
+        padding: 10px;
+        height: 32px;
+        color: white;
+        background-color: #7eb5a6;
+        border: 0;
+        border-radius: 10px;
+      }
+    }
+  }
+  &-table {
+    margin: 20px;
+    .table {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid;
+      border-radius: 10px;
+      border-spacing: 0;
+      font-size: 14px;
+      &-head {
+        background-color: #7eb5a6;
+        border: 0;
+        &-contain {
+          :first-child {
+            border-radius: 10px 0 0 10px;
+          }
+          :last-child {
+            border-radius: 0 10px 10px 0;
+          }
+          th {
+            color: white;
+            padding: 15px;
+          }
+        }
+      }
+      &-body {
+        margin: 1px 0;
+        &-contain {
+          td {
+            text-align: center;
+            &.gap {
+              padding: 0 12px;
+            }
+            p {
+              margin: 8px 0;
+              padding: 0 5px;
+              &.hadir {
+                color: #7eb5a6;
+                border: 1px solid #7eb5a6;
+                border-radius: 15px;
+              }
+              &.tidak-hadir {
+                color: #da8e04;
+                border: 1px solid #da8e04;
+                border-radius: 15px;
+              }
+            }
+            .delete {
+              padding: 5px 8px;
+              color: white;
+              background-color: #da8e04;
+              border: 0;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.scan{
+  display: flex;
+  height: 100vh;
+  &-qr{
+    margin: 2%;
+    width: 50vw;
+    padding: 20px;
+    border: 1px solid #5A3C22;
+    border-radius: 20px;
+  }
+}
